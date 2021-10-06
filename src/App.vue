@@ -24,6 +24,6 @@ export default defineComponent({
   setup() {
     const cart = useCartStore()
     return { cart }
-  }
+  },
 })
 </script>

@@ -8,9 +8,7 @@
       <label class="form-label"> URL </label>
       <input v-model="inputs.url" type="text" class="form-control" />
     </div>
-    <button type="submit" class="btn btn-success">
-      Add
-    </button>
+    <button type="submit" class="btn btn-success">Add</button>
   </form>
 </template>
 
@@ -28,6 +26,6 @@ export default defineComponent({
       inputs.url = ''
     }
     return { inputs, submit }
-  }
+  },
 })
 </script>
