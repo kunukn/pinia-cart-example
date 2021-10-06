@@ -2,7 +2,6 @@
   <div class="container">
     <Card>
       <h4>Add new item</h4>
-      <!-- Create new item -->
       <AddItem />
     </Card>
     <Card>
