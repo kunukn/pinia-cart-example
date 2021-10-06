@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>Home</h1>
     <Card>
       <h4>Add new item</h4>
       <AddItem />
