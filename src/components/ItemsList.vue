@@ -1,7 +1,7 @@
 <template>
   <div v-for="item in cart.items" :key="item.name" class="row my-1">
     <div class="col">
-      <a :href="item.url">
+      <a :href="'//' + item.url">
         <h5>{{ item.name }}</h5>
       </a>
     </div>
