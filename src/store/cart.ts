@@ -18,8 +18,7 @@ export const useCartStore = defineStore({
       this.items.push(item)
 
       if (this.items.length >= 3) {
-        const anytics = useAnalyticsStore()
-        anytics.addEvent(item.name)
+        useAnalyticsStore().addEvent(item.name)
       }
     },
     removeItem(item: Item) {

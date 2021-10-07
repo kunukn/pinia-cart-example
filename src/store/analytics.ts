@@ -4,10 +4,18 @@ export type Item = { name: string; url: string }
 
 export const useAnalyticsStore = defineStore({
   id: 'analytics',
-  state: () => ({}),
+  state: () => ({
+    count: 0,
+  }),
+  getters: {
+    getCount() {
+      return this.count
+    },
+  },
   actions: {
-    addEvent(id: string) {
-      console.log(id)
+    addEvent(name: string) {
+      this.count++
+      console.log(name, new Date())
     },
   },
 })
